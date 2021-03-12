@@ -1,0 +1,396 @@
+
+body{
+    background-color: #EDEDED;
+}
+p {
+    font-size: 1em;
+    line-height: 1.5em;
+}
+
+.foot{
+    padding-bottom : 90px;
+}
+a{
+  text-decoration: none;
+    color : #000;
+}
+a:hover{
+    color: orange;
+}
+/* Header et Footer */
+header, footer {
+    background-image: url(../Images/pattern.png);
+    width: 100%;
+    color: white;
+    box-shadow: 0px 0px 15px #333;
+    padding: 20px 0px;
+}
+header {
+  border-bottom: 2px solid #fff;
+    height: 180px;
+}
+header h1 {
+    font-family: 'Do Hyeon', sans-serif;
+    font-size: 2.2em;
+    width: 90%;
+    margin: 10px auto;
+}
+/* Menu */
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+nav li {
+    margin-right: 15px;
+    padding-top: 10px ;
+}
+nav a{
+    color: #fff;
+    font-size: 1.5em;
+    text-transform: uppercase;
+}
+nav a:hover {
+    text-decoration: underline;
+    color: #fff;
+}
+footer {
+    border-top: 2px solid #fff;
+}
+footer p {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+}
+footer a {
+    color: #fff;
+}
+/* Section*/
+section {
+    display : flex;
+    flex-flow : row wrap;
+    justify-content : center;
+    width : 50%;
+    box-shadow : 0px 0px 10px #BBB;
+    background-color : #fff;
+    margin : 20px auto;
+    padding-bottom : 20px;
+}
+.photo{
+    text-align : center;
+}
+
+section > div{
+    width : 90%;
+}
+
+.photo img{
+    border : 2px solid #FFF
+    box-shadow: 0px 0px 10px #FFF;
+    border-radius : 50%;
+    width : 150px;
+    height : 150px;
+    margin-top : -80px;
+    
+}
+
+section h2{
+    margin : 20px 0px;
+    width : 90%;
+}
+
+.prez, .contact{
+    flex : 0 0 45%;
+}
+
+.prez{
+    border-right : 2px solid #ccc; 
+    padding-right : 20px;
+    margin-left : auto;
+}
+
+.prez a{
+    display : block;
+    text-align : center;
+    background-color : orange;
+    color : #FFF;
+    padding : 10px;
+    box-shadow : 0 0 10px #777;
+    border-radius : 10px;
+    width : 80%;
+    margin : 20px auto;0
+    border : 2px solid orange;
+    
+}
+
+.prez a:hover{
+    color : orange;
+    background-color : white;
+    border : 2px solid orange;
+    box-shadow : 0 0 20px #FFF;
+    transition-duration: 0.45s;
+}
+
+.contact-flex{
+    display : flex;
+    align-items : center;
+}
+
+.contact-flex p:first-child{
+    flex : 0 0 45%;
+}
+
+.contact-flex p:last-child{
+    flex : 0 0 60%;
+}
+
+.contact{
+    margin-left : 20px;
+    margin : auto;
+}
+
+.social{
+    display : flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top : 15px;
+}
+
+.interets img{
+    border-radius : 50%;
+    width : 80px;
+    height : 80px;
+    box-shadow : 0px 0px 10px #777
+    
+}
+
+.interets{
+    display : flex;
+    flex-flow : column wrap;
+    align-items: center;
+    flex : 0 1 25%;
+}
+
+figcaption{
+    margin-top : 10px;
+}
+
+.formation{
+    display : flex;
+    border-bottom : 2px solid black;
+    margin-left: 20px;
+    margin-right: auto;
+}
+
+.forme-logo{
+    flex : 0 0 45%;
+}
+
+.forme-info{
+    flex : 0 0 90%;
+}
+
+hr{
+    padding : 20px; 
+}
+
+.experience{
+    display : flex;
+    border-bottom : 2px solid black;
+    margin-left : 20px;
+    margin-right : auto;
+}
+
+.exp-logo{
+    flex : 0 0 45%;
+}
+
+.form-exp{
+    flex : 0 0 90%;
+    text-align : left;
+}
+
+/* Formulaire de contact */
+
+form{
+    width : 95%;
+    margin : 0 auto;
+}
+
+label{
+    display : block;
+    margin-top : 20px;
+}
+
+input, textarea{
+    width : 95%;
+    height : 30px;
+    background-color : #ededed;
+    border-radius : 5px;
+    border : 1px solid #ccc;
+    padding : 10px;
+    font-size : 0.95em;
+    margin-top : 4px;
+    color : #777;
+}
+
+[type="checkbox"]{
+    width : 10px;
+    height : 10px;
+    margin-top : 30px;
+}
+
+textarea{
+    height : 150px;
+}
+
+#submit{
+    width : 127px;
+    height : 38px;
+    background-image : url(../Images/submit.jpg)
+}
+
+#submit:hover{
+    opacity : 0.9;
+}
+
+.contact-flex:first-of-type p:last-child{
+    font-weight: bold;
+}
+
+.map{
+    box-shadow : 0 0 10px #ccc;
+    margin : 20px 0;
+    border-radius : 6px;
+}
+
+/* Compétences */
+
+.h3Comp{
+    width : 90%;
+    margin-bottom : 10pw;
+}
+
+.comp{
+    display : flex;
+    flex-flow : row wrap;
+    margin-bottom : 10px;
+}
+
+.conteneur-barre{
+    background-color : grey;
+    border-radius : 5px;
+    flex : 0 0 60%;
+}
+
+.comp p{
+    flex : 0 0 40%;
+}
+
+
+.comp2{
+    display : flex;
+    flex-flow : row wrap;
+    justify-content : space-between;
+}
+
+.conteneur2{
+    background-color : grey;
+    border-radius : 5px;
+    flex : 0 0 100%;
+    height : 10px;
+}
+
+.barre{
+    display : block;
+    height : 100%;
+     border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.c50{
+    width : 90%;
+    background-color : #8D8;
+}
+
+.c75{
+    width : 10%;
+    background-color : #8D8;
+}
+
+.c65{
+    width : 50%;
+    background-color: #8D8;
+}
+
+.c85{
+    width : 85%;
+    background-color: #8D8;
+}
+
+.c95{
+    width : 75%;
+    background-color : #8D8;
+}
+
+.c105{
+    width : 90%;
+    background-color : #8D8;
+}
+
+.c115{
+    width : 60%;
+    background-color : #8D8;
+}
+
+.txt{
+    text-align : left;;
+}
+
+.txt p{
+    margin-bottom : 20px;
+}
+
+.seguy{
+    color : brown;
+}
+
+ .h31{
+    text-align : left;
+}
+.poco{
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
